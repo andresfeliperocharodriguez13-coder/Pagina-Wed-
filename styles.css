@@ -1,0 +1,273 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.catalog-header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.catalog-header h1 {
+  font-size: 1.8rem;
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 6px;
+}
+
+.product-title {
+  font-size: 1.15rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.product-short-desc {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.product-price {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #059669;
+}
+
+.btn-detail {
+  align-self: flex-end;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+}
+
+.btn-detail:hover {
+  background-color: #2563eb;
+}
+
+.contact-section {
+  background-color: #fef08a; 
+  border: 1.5px solid #facc15;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.contact-section h3 {
+  margin-bottom: 15px;
+  color: #854d0e;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ca8a04;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  border-color: #854d0e;
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
+}
+
+.btn-send {
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-send:hover {
+  background-color: #0f172a;
+}
+
+.modal-checkbox {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-image {
+  width: 100%;
+  height: 180px;
+  background-color: #f3f4f6;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info h2 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.modal-info h3 {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-info p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+.btn-close {
+  display: block;
+  background-color: #ef4444;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-close:hover {
+  background-color: #dc2626;
+}
+
+.modal-checkbox:checked + .modal-overlay {
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+.modal-checkbox:checked + .modal-overlay .modal-content {
+  transform: scale(1);
+}

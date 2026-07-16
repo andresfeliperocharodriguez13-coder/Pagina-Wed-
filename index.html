@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Catálogo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <header class="catalog-header">
+      <h1>Nuestro Catálogo</h1>
+    </header>
+
+    <main class="products-list">
+      
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://nikeco.vtexassets.com/arquivos/ids/216386/125144900049.jpg?v=638346288873630000" alt="Zapato Nike Blanco">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Zapato Nike Blanco</h2>
+          <p class="product-short-desc">Diseño clásico de cuero con amortiguación premium para el día a día.</p>
+          <span class="product-price">$380.000</span>
+          <label for="modal-toggle-1" class="btn-detail">Detalle</label>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://www.bon-bonite.com/wp-content/uploads/2024/11/carteras-cuero-193628-A-600x600.png" alt="Bolso de Mujer de Cuero">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Bolso de Cuero</h2>
+          <p class="product-short-desc">Elegante bolso de cuero genuino con compartimentos organizadores.</p>
+          <span class="product-price">$220.000</span>
+          <label for="modal-toggle-2" class="btn-detail">Detalle</label>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://themark.com.co/wp-content/uploads/2024/09/Teclado-Mecanico-Redragon-K616-RGB-FIZZ-PRO-WHITE-GRAY-USB-C-BT-Inalambrico-USB-1-700x800.jpg" alt="Teclado Mecánico">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Teclado Mecánico</h2>
+          <p class="product-short-desc">Interruptores táctiles silenciosos y retroiluminación RGB personalizable.</p>
+          <span class="product-price">$180.000</span>
+          <label for="modal-toggle-3" class="btn-detail">Detalle</label>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabAdrx2FrIthsjVokptHxmKPREvpUJ2B-5qX803YKGt4noejTE2xlTgi_&s=10" alt="Celular Phone 17 Pro Max">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Phone 17 Pro Max</h2>
+          <p class="product-short-desc">Pantalla de última generación, triple cámara y el procesador más rápido.</p>
+          <span class="product-price">$5.200.000</span>
+          <label for="modal-toggle-4" class="btn-detail">Detalle</label>
+        </div>
+      </article>
+
+    </main>
+
+    <section class="contact-section">
+      <h3>Contacto</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Nota" rows="3" required></textarea>
+        <button type="submit" class="btn-send">Enviar</button>
+      </form>
+    </section>
+
+  </div>
+
+  <input type="checkbox" id="modal-toggle-1" class="modal-checkbox">
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-grid">
+        <div class="modal-image">
+          <img src="https://nikeco.vtexassets.com/arquivos/ids/216386/125144900049.jpg?v=638346288873630000" alt="Zapato Nike Blanco">
+        </div>
+        <div class="modal-info">
+          <h2>Zapato Nike Blanco</h2>
+          <h3>Descripción completa:</h3>
+          <p>Un icono de la moda urbana. Este calzado ofrece una excelente ventilación, suela de goma antideslizante de alta durabilidad y detalles bordados a mano que marcan la diferencia. Ideal para combinar con cualquier estilo casual.</p>
+          <span class="product-price">$380.000</span>
+        </div>
+      </div>
+      <label for="modal-toggle-1" class="btn-close">Cerrar</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-toggle-2" class="modal-checkbox">
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-grid">
+        <div class="modal-image">
+          <img src="https://www.bon-bonite.com/wp-content/uploads/2024/11/carteras-cuero-193628-A-600x600.png" alt="Bolso de Mujer de Cuero">
+        </div>
+        <div class="modal-info">
+          <h2>Bolso de Cuero</h2>
+          <h3>Descripción completa:</h3>
+          <p>Confeccionado artesanalmente con el cuero más fino del mercado. Cuenta con bolsillos internos con cremallera, forro suave de satén y una correa ajustable para llevar al hombro cómodamente.</p>
+          <span class="product-price">$220.000</span>
+        </div>
+      </div>
+      <label for="modal-toggle-2" class="btn-close">Cerrar</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-toggle-3" class="modal-checkbox">
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-grid">
+        <div class="modal-image">
+          <img src="https://themark.com.co/wp-content/uploads/2024/09/Teclado-Mecanico-Redragon-K616-RGB-FIZZ-PRO-WHITE-GRAY-USB-C-BT-Inalambrico-USB-1-700x800.jpg" alt="Teclado Mecánico">
+        </div>
+        <div class="modal-info">
+          <h2>Teclado Mecánico</h2>
+          <h3>Descripción completa:</h3>
+          <p>Diseñado para largas sesiones de juego y trabajo de programación. Cuenta con layout en español, teclas de doble inyección que nunca se borran, y un cable trenzado removible tipo C para máxima portabilidad.</p>
+          <span class="product-price">$180.000</span>
+        </div>
+      </div>
+      <label for="modal-toggle-3" class="btn-close">Cerrar</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-toggle-4" class="modal-checkbox">
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-grid">
+        <div class="modal-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabAdrx2FrIthsjVokptHxmKPREvpUJ2B-5qX803YKGt4noejTE2xlTgi_&s=10" alt="Celular Phone 17 Pro Max">
+        </div>
+        <div class="modal-info">
+          <h2>Phone 17 Pro Max</h2>
+          <h3>Descripción completa:</h3>
+          <p>La máxima expresión de tecnología móvil. Experimenta una pantalla ProMotion super nítida, rendimiento gráfico sin precedentes para videojuegos exigentes y una duración de batería capaz de superar las 30 horas de uso.</p>
+          <span class="product-price">$5.200.000</span>
+        </div>
+      </div>
+      <label for="modal-toggle-4" class="btn-close">Cerrar</label>
+    </div>
+  </div>
+
+</body>
+</html>
