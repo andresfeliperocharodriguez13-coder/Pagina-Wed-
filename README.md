@@ -1,4 +1,4 @@
-URL:https://spectacular-lamington-c70867.netlify.app/﻿
+URL:spectacular-lamington-c70867.netlify.app/﻿
 📦 Catálogo Web con Modales Interactivos (CSS-Only)
 Un catálogo de productos moderno, limpio y altamente eficiente diseñado para dispositivos móviles y de escritorio. El aspecto más destacado de este proyecto es que cuenta con modales interactivos (ventanas emergentes) funcionales sin utilizar una sola línea de JavaScript, logrando la interacción puramente a través de la técnica de Checkbox Hack en HTML5 y CSS3.
 
